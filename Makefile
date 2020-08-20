@@ -4,10 +4,13 @@ IMAGE=ecirtap/flemm:$(VERSION)
 build:
 	docker build -t $(IMAGE) .
 
+buildx:
+	docker buildx build --pull --platform linux/amd64,linux/arm/v7,linux/arm64 --push -t $(IMAGE) .
+
 push:
 	docker push $(IMAGE)
 
-help:
+rm:
 	docker run --rm $(IMAGE)
 
 test:
