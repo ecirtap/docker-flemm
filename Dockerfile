@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk update && apk add perl
+RUN apk update && apk add perl bash
 
 RUN adduser -D -h /flemm -g flemm flemm
 
