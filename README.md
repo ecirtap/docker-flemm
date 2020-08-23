@@ -5,7 +5,7 @@ See https://github.com/fiamm/Flemmv31
 
 **Example:**
 
-    % echo 'Il a deux trous rouges au côté droit.' | docker run --rm -i ecirtap/treetagger:3.2 tree-tagger-french|docker run --rm -i ecirtap/flemm:3.1.1 --tagger treetagger
+    % echo 'Il a deux trous rouges au côté droit.' | docker run --rm -i ecirtap/treetagger:3.2.3 tree-tagger-french|docker run --rm -i ecirtap/flemm:3.1.1 --tagger treetagger
     reading parameters ...
     tagging ...
     finished.
